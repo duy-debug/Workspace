@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Traval reservation form</h1>
+    <h2>* denotes mandotory</h2>
+    <div>Full name*:<br>
+        <input type="name" placeholder="FirstName LastName"/>
+    </div>
+    <div>Email address*:<br>
+        <input type="email" placeholder="EMAIL_ADDRESS"/>
+    </div>
+    <div>Select Tour Package*: <br>
+        <select id="tour" name="tour" required>
+            <option value="goa">Goa</option>
+        </select>
+    </div>
+    <div>Arrival date*: <br>
+        <input type="date*" placeholder="m/d/y"/>
+    </div>
+    <div>Number of persons*: <br>
+        <input type="persons" placeholder="UNKNOWN_TYPE"/>
+    </div>
+    <div>What would you want to avail?* <br>
+        <input type="checkbox" name="service" value="boarding"> Boarding <br>
+        <input type="checkbox" name="service" value="fooding"> Fooding <br>
+        <input type="checkbox" name="service" value="sightseeing"> Sightseeing
+    </div>
+    <div>Discout Coupon code: <br>
+        <input type="persons" placeholder="UNKNOWN_TYPE"/>
+    </div>
+    <div>Tems and conditions* <br>
+        <input type="radio"> I agree
+        <input type="radio"> I disagree
+    </div>
+    <button type="submit">Complete reservation</button>
+</body>
+</html>
