@@ -1,0 +1,20 @@
+.box {
+    background-color: #789cd4;
+    padding: 5px 25px;
+    color: aliceblue;
+    border-color: #789cd4;
+    position: relative;
+    top: 10px; /* Di chuyển xuống dưới */
+}
+span {
+    color: aqua;
+}
+button {
+    color: aliceblue;
+    background-color: black;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+div {
+    text-align: center;
+}
