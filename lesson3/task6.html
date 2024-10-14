@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/task-6.css">
+</head>
+<body>
+    <form action="">
+        <label for="">First name:</label><br>
+        <input type="text" name="fname"> <br>
+        <label for="">Last name:</label><br>
+        <input type="password" name="Inname"> <br> <br>
+        <input type="submit" value="Submit"> <br>
+        <div>Giới tính:
+            <!-- Chọn 1 trong 2 -->
+            <input type="radio" name="gt">Nam 
+            <input type="radio" name="gt">Nữ
+        </div>
+        <div>
+            Kiến thức:
+            <!-- Input này được chọn nhiều hơn 1, nhưng cũng viết chung name cho 1 loại, vì sẽ cần đưa dữ liệu lên server sau này. -->
+            <input type="checkbox" name="kt" id="">C++
+            <input type="checkbox" name="kt" id="">C#
+            <input type="checkbox" name="kt" id="">PHP
+        </div>
+    </form> <br>
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    Tên đăng kí:
+                </td>
+                <td>
+                    <input type="text" name="data">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mật khẩu:
+                </td>
+                <td>
+                    <input type="text" name="data1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Giới tính:
+                </td>
+                <td>
+                    <input type="radio" name="data2">Nam
+                    <input type="radio" name="data2">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Kiến thức:</td>
+                <td>
+                    <input type="checkbox" name="kt">C++
+                    <input type="checkbox" name="kt">C
+                    <input type="checkbox" name="kt">PHP
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Đăng kí">
+                    <input type="reset" value="Hoàn lại">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <form action="" >
+        <fieldset >
+            <legend>
+                Đăng kí:
+            </legend>
+            <table>
+                <tr>
+                    <td>Tên đăng kí:</td>
+                    <td>
+                        <input type="text" name="name1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu:</td>
+                    <td>
+                        <input type="text" name="name2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Giới tính:</td>
+                    <td>
+                        <input type="radio" name="gt">Nam
+                        <input type="radio" name="gt">Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kiến thức:</td>
+                    <td>
+                        <input type="checkbox" name="kt">C++
+                        <input type="checkbox" name="kt">C
+                        <input type="checkbox" name="kt">PHP
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chọn khóa:</td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">
+                                Khóa 64
+                            </option>
+                            <option value="">
+                                Khóa 65
+                            </option>
+                            <option value="">
+                                Khóa 66
+                            </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Đăng kí">
+                        <input type="submit" value="Hoàn tác">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
