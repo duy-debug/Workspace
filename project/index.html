@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <!-- sử dụng bootstrap -->
+    <title>Đăng kí tài khoản</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #715192, #2575fc);
+            height: 100vh; /* Chiều cao toàn bộ viewport */
+        }
+        .form-container {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            background-color: #ffffff; /* Màu nền cho biểu mẫu */
+        }
+        .form-control {
+            background-color: #f0f8ff; /* Màu nền cho ô nhập liệu */
+            border: 2px solid #6c85b6; /* Màu viền cho ô nhập liệu */
+            transition: border-color 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển tiếp cho ô nhập liệu */
+        }
+        .form-control:focus {
+            border-color: #2575fc; /* Màu viền khi ô nhập liệu được chọn */
+            box-shadow: 0 0 5px rgba(81, 86, 96, 0.5); /* Hiệu ứng bóng khi chọn ô nhập liệu */
+        }
+        label {
+            color: #000000; /* Màu chữ cho nhãn */
+        }
+        .btn-primary {
+            background-color: #2575fc; /* Màu nền cho nút */
+            border: none; /* Bỏ viền cho nút */
+            transition: background-color 0.3s; /* Hiệu ứng chuyển tiếp cho nút */
+        }
+        .btn-primary:hover {
+            background-color: #6a11cb; /* Màu nền khi di chuột lên nút */
+        }
+        .fade-in {
+            opacity: 0; /* Bắt đầu với độ mờ */
+            transform: translateY(-20px); /* Đưa tiêu đề lên phía trên */
+            animation: fadeIn 1s forwards; /* Hiệu ứng xuất hiện */
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1; /* Kết thúc với độ mờ hoàn toàn */
+                transform: translateY(0); /* Trở về vị trí ban đầu */
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="row justify-content-around">
+                <form action="" class="col-md-6 bg-light p-3 my-3">
+                    <h1 class="text-center text-uppercase h3 py-3">Đăng kí tài khoản</h1>
+                    <div class="form-group">
+                        <label for="fullname">Họ và tên</label>
+                        <input type="text" name="fullname" id="fullname" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Tên đăng nhập</label>
+                        <input type="text" name="username" id="username" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mật khẩu</label>
+                        <input type="password" name="password" id="password" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Giới tính</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="gender" id="male" value="male" class="form-check-input" checked>
+                                <label for="male" class="form-check-label">Nam</label>
+                            </div>
+                            <div class="form check form-check-inline">
+                                <input type="radio" name="gender" id="female" value="female" class="form-check-input">
+                                <label for="female" class="form-check-label">Nữ</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="address">Địa chỉ</label>
+                        <input type="text" name="address" id="address" class="form-control" required>
+                    </div>
+                    <input type="submit" value="Đăng ký" class="btn-primary btn w-100">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
