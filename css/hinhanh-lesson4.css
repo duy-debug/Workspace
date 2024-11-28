@@ -1,0 +1,33 @@
+.box{
+    background-color: aqua;
+    width: 100%px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    /*  display: flex;
+        justify-content: flex-end;  gọi là flex box
+        để trong thẻ cha
+        khi chưa sử dụng flex box thì sử dụng top left right để căn chỉnh
+        khi sử dụng flex box thì bỏ các thuộc tính left right top bottom.
+        */
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.bg-black{
+    background-color: rgba(0, 0, 0, 0.496);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+.context{
+    font-size: 50px;
+    background-color: red;
+    width: fit-content;
+    padding: 50px;
+    position: absolute;
+}
