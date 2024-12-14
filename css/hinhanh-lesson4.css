@@ -4,7 +4,7 @@
     height: 500px;
     position: relative;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     /*  display: flex;
         justify-content: flex-end;  gọi là flex box
